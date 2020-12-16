@@ -72,8 +72,10 @@ body {
     }
     &__title-link {
         font-size: 12px;
-        padding: 6px 9px;
+        padding: 7px 10px;
         margin-left: 32px;
+      vertical-align: 5px;
+        display: inline-block;
         background-color: #f1f4f8;
         border-radius: 8px;
         &:hover {
