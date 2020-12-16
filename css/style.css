@@ -28,6 +28,7 @@ body {
 .header__logo {
   font-weight: 700;
   font-size: 20px;
+  color: #1b1d25;
   padding: 16px 20px;
   margin-left: -20px;
 }
@@ -71,6 +72,7 @@ body {
 
 .menu__list-link {
   font-size: 19px;
+  color: #495057;
 }
 
 .articles__inner {
@@ -134,14 +136,15 @@ body {
   margin-left: 16px;
   font-size: 13px;
   padding: 6px;
-  background-color: rgba(128, 235, 146, 0.52);
+  background-color: #d3f9d8;
   border-radius: 4px;
 }
 
 .title {
+  color: #343a40;
   font-size: 32px;
   font-weight: 700;
-  border-bottom: 4px solid rgba(213, 234, 253, 0.568);
+  border-bottom: 4px solid #f1f4f8;
   padding-bottom: 8px;
   margin-bottom: 16px;
 }
@@ -166,6 +169,7 @@ body {
 }
 
 .projects__title {
+  color: #495057;
   font-size: 20px;
   font-weight: 700;
   margin-left: 10px;
@@ -173,6 +177,10 @@ body {
 
 .projects__title:hover {
   text-decoration: underline;
+}
+
+.projects__text {
+  color: #858b93;
 }
 
 .projects__link {
@@ -186,14 +194,18 @@ body {
 
 .projects__btn {
   color: white;
-  background-color: #1682db;
   padding: 8px 10px;
   border-radius: 6px;
   margin-left: 16px;
+  background-color: #5183f5;
 }
 
 .projects__btn:hover {
-  background-color: #0f5288;
+  background-color: #364fc7;
+}
+
+.interviews__inner {
+  margin: 56px 0;
 }
 
 .interviews__row {
@@ -219,7 +231,39 @@ body {
 }
 
 .interviews__title {
+  color: #495057;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
+}
+
+.interviews__text {
+  color: #858b93;
+}
+
+.newsletter__inner {
+  margin: 56px 0;
+}
+
+.newsletter__text {
+  color: #495057;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.newsletter__link {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  padding: 21px 24px;
+  border-radius: 6px;
+  background-color: #5183f5;
+}
+
+.newsletter__link:hover {
+  background-color: #364fc7;
+}
+
+.newsletter__link span {
+  margin-right: 8px;
 }

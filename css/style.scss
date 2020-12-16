@@ -21,6 +21,7 @@ body {
     &__logo {
         font-weight: 700;
         font-size: 20px;
+        color: #1b1d25;
         padding: 16px 20px;
         margin-left: -20px;
         &:hover {
@@ -60,6 +61,7 @@ body {
     }
     &__list-link {
         font-size: 19px;
+        color: #495057;
     }
 }
 //===SECTION===ARTICLES====
@@ -108,14 +110,15 @@ body {
         margin-left: 16px;
         font-size: 13px;
         padding: 6px;
-        background-color: rgba(128, 235, 146, 0.52);
+        background-color: #d3f9d8;
         border-radius: 4px;
     }
 }
 .title {
+    color: #343a40;
     font-size: 32px;
     font-weight: 700;
-    border-bottom: 4px solid rgba(213, 234, 253, 0.568);
+    border-bottom: 4px solid #f1f4f8;
     padding-bottom: 8px;
     margin-bottom: 16px;
 }
@@ -135,6 +138,7 @@ body {
     &__img {
     }
     &__title {
+        color: #495057;
         font-size: 20px;
         font-weight: 700;
         margin-left: 10px;
@@ -145,6 +149,7 @@ body {
     &__content {
     }
     &__text {
+        color: #858b93;
     }
     &__link {
         display: flex;
@@ -154,18 +159,19 @@ body {
     }
     &__btn {
         color: white;
-        background-color: rgb(22, 130, 219);
         padding: 8px 10px;
         border-radius: 6px;
         margin-left: 16px;
-        &:hover {
-            background-color: rgb(15, 82, 136);
+        background-color: #5183f5;
+        &:hover{
+            background-color: #364fc7;   
         }
     }
 }
 //===SECTION===INTERVIEWS===
 .interviews {
     &__inner {
+        margin: 56px 0;
     }
     &__row {
        padding-left: 24px;
@@ -185,10 +191,37 @@ body {
         }
     }
     &__title {
+        color: #495057;
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 8px;
     }
     &__text {
+        color: #858b93;
+    }
+}
+//===SECTION=====NEWSLETTER====
+.newsletter {
+    &__inner{
+        margin: 56px 0;
+    }
+    &__text {
+        color: #495057;
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+    &__link {
+        display: inline-block;
+        font-size: 18px;
+        color: white;
+        padding: 21px 24px;
+        border-radius: 6px;
+        background-color: #5183f5;
+        &:hover{
+            background-color: #364fc7;   
+        }
+        span{
+            margin-right: 8px;
+        }
     }
 }
