@@ -23,6 +23,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 24px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header__logo {
@@ -47,6 +49,12 @@ body {
 
 .menu {
   margin-left: auto;
+}
+
+@media (max-width: 480px) {
+  .menu {
+    margin: 0 auto;
+  }
 }
 
 .menu__list {
@@ -74,10 +82,6 @@ body {
   color: #495057;
 }
 
-.articles__inner {
-  margin: 56px 0;
-}
-
 .articles__title-link {
   font-size: 12px;
   padding: 7px 10px;
@@ -103,15 +107,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px;
-  margin-left: -12px;
-  margin-right: -12px;
+  padding: 12px 0;
   margin-bottom: 2px;
 }
 
 .articles__row:hover {
   background-color: #f1f4f8;
   border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .articles__row {
+    border-bottom: 2px solid #f1f4f8;
+  }
 }
 
 .articles__time {
@@ -129,6 +137,12 @@ body {
           flex: 1 1 auto;
   font-size: 20px;
   font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .articles__text {
+    font-size: 17px;
+  }
 }
 
 .articles__text-new {
@@ -151,8 +165,21 @@ body {
   margin-bottom: 16px;
 }
 
-.projects__inner {
+@media (max-width: 767px) {
+  .title {
+    border-bottom: none;
+    font-size: 25px;
+  }
+}
+
+.inner {
   margin: 56px 0;
+}
+
+@media (max-width: 480px) {
+  .inner {
+    margin-top: 0;
+  }
 }
 
 .projects__row {
@@ -165,9 +192,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px;
-  margin-left: -12px;
-  margin-right: -12px;
+  padding: 12px 0;
+}
+
+@media (max-width: 767px) {
+  .projects__row {
+    border-bottom: 2px solid #f1f4f8;
+  }
 }
 
 .projects__title {
@@ -206,10 +237,6 @@ body {
   background-color: #364fc7;
 }
 
-.interviews__inner {
-  margin: 56px 0;
-}
-
 .interviews__row {
   padding-left: 24px;
 }
@@ -219,6 +246,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .interviews__content {
+    border-bottom: 2px solid #f1f4f8;
+  }
 }
 
 .interviews__img {
@@ -241,10 +274,6 @@ body {
 
 .interviews__text {
   color: #858b93;
-}
-
-.newsletter__inner {
-  margin: 56px 0;
 }
 
 .newsletter__text {
@@ -302,6 +331,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 16px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-menu__list-item {

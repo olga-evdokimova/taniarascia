@@ -17,6 +17,8 @@ body {
         justify-content: space-between;
         align-items: center;
         padding: 24px 0;
+        flex-wrap: wrap;
+        
     }
     &__logo {
         font-weight: 700;
@@ -43,6 +45,9 @@ body {
 }
 .menu {
     margin-left: auto;
+    @media(max-width:480px){
+        margin: 0 auto;    
+    }
     &__list {
         display: flex;
     }
@@ -65,9 +70,6 @@ body {
 }
 //===SECTION===ARTICLES====
 .articles {
-    &__inner {
-        margin: 56px 0;
-    }
     &__title {
     }
     &__title-link {
@@ -82,20 +84,23 @@ body {
             background-color: #edeff1;
             
         }
+        
     }
     &__row {
         cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 12px;
-        margin-left: -12px;
-        margin-right: -12px;
+        padding: 12px 0;
         margin-bottom: 2px;
         &:hover {
             background-color: #f1f4f8;
             border-radius: 8px;
         }
+        @media (max-width: 767px) {
+            border-bottom: 2px solid #f1f4f8;
+        }
+      
     }
     &__time {
         font-size: 13px;
@@ -107,6 +112,9 @@ body {
         flex: 1 1 auto;
         font-size: 20px;
         font-weight: 700;
+        @media (max-width: 767px) {
+            font-size: 17px;
+        }
     }
     &__text-new {
         flex: 0 0 auto;
@@ -124,19 +132,28 @@ body {
     border-bottom: 4px solid #f1f4f8;
     padding-bottom: 8px;
     margin-bottom: 16px;
+    @media (max-width: 767px) {
+        border-bottom: none;
+        font-size: 25px;
+    }
+}
+.inner{
+    margin: 56px 0;
+    @media (max-width:480px) {
+        margin-top: 0;
+    }
 }
 //=====SECTION===PROJECTS=====
 .projects {
-    &__inner {
-        margin: 56px 0;
-    }
+    
     &__row {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 12px;
-        margin-left: -12px;
-        margin-right: -12px;
+        padding: 12px 0;
+         @media (max-width: 767px) {
+            border-bottom: 2px solid #f1f4f8;
+        }
     }
     &__img {
     }
@@ -173,15 +190,17 @@ body {
 }
 //===SECTION===INTERVIEWS===
 .interviews {
-    &__inner {
-        margin: 56px 0;
-    }
+    
     &__row {
        padding-left: 24px;
+      
     }
     &__content{
         padding: 24px 0;
         display: flex;
+        @media (max-width: 767px) {
+            border-bottom: 2px solid #f1f4f8;
+        }
     }
     &__img {
         width: 50px;
@@ -205,9 +224,7 @@ body {
 }
 //===SECTION=====NEWSLETTER====
 .newsletter {
-    &__inner{
-        margin: 56px 0;
-    }
+    
     &__text {
         color: #495057;
         font-size: 18px;
@@ -254,6 +271,7 @@ body {
         display: flex;
         justify-content: center;
         padding: 16px 0;
+        flex-wrap: wrap;
     }
     &__list-item {
         padding: 12px;
