@@ -99,8 +99,6 @@ body {
 }
 //===SECTION===ARTICLES====
 .articles {
-    &__title {
-    }
     &__title-link {
         font-size: 12px;
         padding: 7px 10px;
@@ -113,20 +111,21 @@ body {
             background-color: #edeff1;
         }
     }
-    &__row {
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 12px;
-        margin-bottom: 2px;
-        &:hover {
-            background-color: #f1f4f8;
-            border-radius: 8px;
-        }
-        @media (max-width: 767px) {
-            border-bottom: 2px solid #f1f4f8;
-        }
+    
+}
+.row-content {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 2px;
+    &:hover {
+        background-color: #f1f4f8;
+        border-radius: 8px;
+    }
+    @media (max-width: 767px) {
+        border-bottom: 2px solid #f1f4f8;
     }
     &__time {
         font-size: 13px;
@@ -151,7 +150,8 @@ body {
         border-radius: 4px;
     }
 }
-.title {
+
+.title-h2 {
     color: #343a40;
     font-size: 32px;
     font-weight: 700;
