@@ -12,13 +12,31 @@ body {
 }
 //====HEADER======
 .header {
+    @media (max-width: 800px) {
+        padding-top: 106px;
+    }
+    @media (max-width: 480px) {
+        padding-top: 162px;
+    }
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 24px 0;
         flex-wrap: wrap;
-        
+        @media (max-width: 800px) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #5183f5;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        @media (max-width: 480px) {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
     }
     &__logo {
         font-weight: 700;
@@ -26,6 +44,10 @@ body {
         color: #1b1d25;
         padding: 16px 20px;
         margin-left: -20px;
+        @media (max-width: 800px) {
+            color: white;
+            
+        }
         &:hover {
             border-radius: 8px;
             background-color: #f1f4f8;
@@ -39,14 +61,12 @@ body {
     &__logo-title {
     }
     &__img {
-       
     }
-    
 }
 .menu {
     margin-left: auto;
-    @media(max-width:480px){
-        margin: 0 auto;    
+    @media (max-width: 480px) {
+        margin: 0 auto;
     }
     &__list {
         display: flex;
@@ -54,18 +74,27 @@ body {
     &__list-item {
         padding: 16px 20px;
         margin: 0 2px;
+        border-radius: 8px;
         &:hover {
             background-color: #f1f4f8;
-            border-radius: 8px;
+            @media (max-width: 800px){
+                background-color: transparent;
+            }
         }
-        &:last-child{
-            margin-right:-18px;
-            
+        &:last-child {
+            margin-right: -18px;
         }
     }
     &__list-link {
         font-size: 19px;
         color: #495057;
+        @media (max-width: 800px) {
+            color: white;
+           
+        }
+        @media (max-width: 400px){
+            font-size: 14px;
+        }
     }
 }
 //===SECTION===ARTICLES====
@@ -76,22 +105,20 @@ body {
         font-size: 12px;
         padding: 7px 10px;
         margin-left: 32px;
-      vertical-align: 5px;
+        vertical-align: 5px;
         display: inline-block;
         background-color: #f1f4f8;
         border-radius: 8px;
         &:hover {
             background-color: #edeff1;
-            
         }
-        
     }
     &__row {
         cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 12px  ;
+        padding: 12px;
         margin-bottom: 2px;
         &:hover {
             background-color: #f1f4f8;
@@ -100,7 +127,6 @@ body {
         @media (max-width: 767px) {
             border-bottom: 2px solid #f1f4f8;
         }
-      
     }
     &__time {
         font-size: 13px;
@@ -137,21 +163,20 @@ body {
         font-size: 25px;
     }
 }
-.inner{
+.inner {
     margin: 56px 0;
-    @media (max-width:480px) {
+    @media (max-width: 480px) {
         margin-top: 0;
     }
 }
 //=====SECTION===PROJECTS=====
 .projects {
-    
     &__row {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 12px 0;
-         @media (max-width: 767px) {
+        @media (max-width: 767px) {
             border-bottom: 2px solid #f1f4f8;
         }
     }
@@ -183,19 +208,17 @@ body {
         border-radius: 6px;
         margin-left: 16px;
         background-color: #5183f5;
-        &:hover{
-            background-color: #364fc7;   
+        &:hover {
+            background-color: #364fc7;
         }
     }
 }
 //===SECTION===INTERVIEWS===
 .interviews {
-    
     &__row {
-       padding-left: 24px;
-      
+        padding-left: 24px;
     }
-    &__content{
+    &__content {
         padding: 24px 0;
         display: flex;
         @media (max-width: 767px) {
@@ -208,7 +231,7 @@ body {
         object-fit: cover;
     }
     &__link {
-         &:hover {
+        &:hover {
             text-decoration: underline;
         }
     }
@@ -224,7 +247,6 @@ body {
 }
 //===SECTION=====NEWSLETTER====
 .newsletter {
-    
     &__text {
         color: #495057;
         font-size: 18px;
@@ -237,10 +259,10 @@ body {
         padding: 21px 24px;
         border-radius: 6px;
         background-color: #5183f5;
-        &:hover{
-            background-color: #364fc7;   
+        &:hover {
+            background-color: #364fc7;
         }
-        span{
+        span {
             margin-right: 8px;
         }
     }
@@ -256,7 +278,6 @@ body {
         padding: 16px 0;
     }
     &__item-link {
-        
     }
     &__item-img {
         width: 30px;
@@ -266,7 +287,6 @@ body {
     }
 }
 .footer-menu {
-
     &__list {
         display: flex;
         justify-content: center;
@@ -278,10 +298,9 @@ body {
         margin: 0 8px;
         &:hover {
             border-radius: 8px;
-            background-color:#f1f4f8;
+            background-color: #f1f4f8;
         }
     }
     &__list-link {
-       
     }
 }
