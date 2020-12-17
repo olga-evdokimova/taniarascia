@@ -91,7 +91,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 12px 0;
+        padding: 12px  ;
         margin-bottom: 2px;
         &:hover {
             background-color: #f1f4f8;
@@ -118,7 +118,7 @@ body {
     }
     &__text-new {
         flex: 0 0 auto;
-        margin-left: 16px;
+        margin-left: 5px;
         font-size: 13px;
         padding: 6px;
         background-color: #d3f9d8;
